@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Debugging Exercise</title>
+    <style>
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center; /* Center the boxes within the container */
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #007bff;
+            color: #ffffff;
+            line-height: 100px; /* Should be the same as the height of the box */
+            margin: 10px; /* Add some spacing between the boxes */
+            display: inline-block; /* Prevents the boxes from stacking vertically */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</body>
+</html>
+<!--The provided code seems mostly correct, but there's an issue with the line-height property in the .box class. 
+    The line height should be the same as the height of the box to vertically center the text. Additionally, you might want to add some spacing between the boxes.-->

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Element</title>
+</head>
+<body>
+    <button onclick="toggleElement()">Toggle Element</button>
+    <div id="target" style="display: none;">This is the target element.</div>
+
+    <script>
+        function toggleElement() {
+            var element = document.getElementById("target");
+            element.style.display = (element.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
+<!--The issue in the provided JavaScript code is that the initial state of the target element is set to "display: none," but the toggleElement function is checking for "block" instead of "none" when deciding whether to toggle the visibility.
+
+To fix the code, change the condition in the toggleElement function to check for "none" instead of "block".-->
